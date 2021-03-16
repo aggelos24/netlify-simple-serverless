@@ -2,7 +2,7 @@ const axios = require('axios');
 const { parse } = require('node-html-parser');
 const pug = require('pug');
 
-const compiledFunction = pug.compileFile('templates/stocks.pug');
+const compiledFunction = pug.compileFile('../templates/stocks.pug');
 
 
 exports.handler = async function(event, context) {
@@ -40,7 +40,6 @@ exports.handler = async function(event, context) {
 			})
 		};
 	} catch (err) {
-		// Handle Error Here
 		console.error(err);
 		return {
 			statusCode: 500,
