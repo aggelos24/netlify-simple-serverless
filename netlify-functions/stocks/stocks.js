@@ -3,7 +3,28 @@ const { parse } = require('node-html-parser');
 const path = require("path");
 const pug = require('pug');
 
-const compiledFunction = pug.compileFile(require.resolve('stocks.pug'));
+template = `
+doctype html
+html
+	head
+		meta(charset='utf-8')
+	body
+		table
+			tr
+				th= 'Symbol'
+				th= 'Price'
+				th= 'Difference'
+				th= 'Percentage'
+			- var directionToClass = { up: "green-letters", down: "red-letters", noChange: "dark-gray-letters" }
+			each stock in stocks
+				tr(class=directionToClass[stock.direction])
+					td= stock.symbol
+					td= stock.price
+					td= stock.diff
+					td= stock.percentage
+`;
+
+const compiledFunction = pug.compile(template);
 
 
 exports.handler = async function(event, context) {
