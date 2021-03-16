@@ -2,6 +2,7 @@ const axios = require('axios');
 const { parse } = require('node-html-parser');
 const pug = require('pug');
 
+console.log(__dirname);
 const compiledFunction = pug.compileFile('../templates/stocks.pug');
 
 
