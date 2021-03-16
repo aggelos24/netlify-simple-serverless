@@ -8,6 +8,8 @@ doctype html
 html
 	head
 		meta(charset='utf-8')
+		style
+			include styles.css
 	body
 		table
 			tr
