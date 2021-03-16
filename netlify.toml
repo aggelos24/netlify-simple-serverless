@@ -1,0 +1,7 @@
+[build]
+	functions = "netlify-functions"
+
+[[redirects]]
+	from = "/stocks"
+	to = "/.netlify/functions/stocks"
+	status = 301

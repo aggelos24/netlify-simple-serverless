@@ -1,0 +1,30 @@
+{
+  "name": "netlify-simple-serverless",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "node-html-parser": "^3.1.0",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "netlify-cli": "^3.13.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aggelos24/netlify-simple-serverless.git"
+  },
+  "keywords": [
+    "serverless",
+    "netlify"
+  ],
+  "author": "Angelos Arnaoutis",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/aggelos24/netlify-simple-serverless/issues"
+  },
+  "homepage": "https://github.com/aggelos24/netlify-simple-serverless#readme"
+}
