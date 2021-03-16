@@ -3,7 +3,7 @@ const { parse } = require('node-html-parser');
 const path = require("path");
 const pug = require('pug');
 
-const compiledFunction = pug.compileFile(path.join(__dirname, 'templates/stocks.pug'));
+const compiledFunction = pug.compileFile('./stocks.pug');
 
 
 exports.handler = async function(event, context) {
